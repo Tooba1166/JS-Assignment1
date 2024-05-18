@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Changes</title>
+</head>
+<body>
+    <script>
+        var a = 2, b = 1;
+        var result = --a - --b + ++b + b--;
+
+        document.write("a: " + a + "<br>");
+        document.write("b: " + b + "<br>");
+        document.write("result: " + result + "<br><br>");
+
+        document.write("Explanation:<br>");
+        document.write("--a: " + a + " (a becomes 1)<br>");
+        document.write("--a - --b: " + (1 - 0) + "<br>");
+        document.write("--a - --b + ++b: " + (1 - 0 + 1) + "<br>");
+        document.write("--a - --b + ++b + b--: " + (1 - 0 + 1 + 1) + "<br>");
+    </script>
+</body>
+</html>
